@@ -1,0 +1,237 @@
+body{
+    background-color: rgb(218, 234, 248);
+}
+header{
+    background-color:#2587be;
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 85%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 0.7fr 1.3fr 1fr;
+}
+#nome{
+    color: antiquewhite;
+    font-size: 4em;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: 2/2/2/5;
+    vertical-align: bottom;
+}
+#titulo{
+    color: antiquewhite;
+    font-size: 2em;
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: 3/2/3/5 ;
+}
+nav{
+    display: grid;
+    grid-template-columns: repeat(5, 15%);
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0f3c4c;
+    min-height: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 85%;
+}
+nav a{
+    color: antiquewhite;
+}
+nav a:hover{
+    color: rgb(189, 179, 167);
+}
+nav a:link{
+    text-decoration: none;
+}
+#estrutura{
+    display: grid;
+    gap: 5%;
+    grid-template-columns:5% 19% 30% auto auto;
+    grid-template-rows: repeat(auto-fill, auto);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    min-height: 900px;
+    border-radius: 10px;
+}
+#informacao{
+    background-color: white;
+    grid-area: 1/1/5/5;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.titulo{
+    padding-top: 10px;
+    margin: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    font-size: 1.5em;
+}
+.conteudo{
+    padding-left: 25px;
+    font-family: 'Lato', sans-serif;
+    line-height: 0.5cm;
+    font-size: 1em;
+    width: 90%;
+
+}
+#conexoes{
+    display: grid;
+    justify-content: left;
+    align-content: center;
+    min-height: 50px;
+    padding-left: 10px;
+}
+#logo_github{
+    width: 25%;
+} 
+#informacao_basica{
+    background-color: white;
+    grid-area: 1/5/5/6;
+    min-height: 200px;
+    border-radius: 10px;
+}
+.destaque{
+    font-family: 'Ubuntu', sans-serif;
+    width: 30%;
+}
+.secundario{
+    font-family: 'Lato', sans-serif;
+}
+#formacao{
+    background-color: white;
+    grid-area: 5/1/11/5;
+    border-radius: 10px;
+}
+.listinha{
+    background-color: rgb(188, 214, 223);
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    padding-left: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 5px solid #0f3c4c;
+    min-height: 80px;
+    width: 95%;
+    color: #0f3c4c;
+}
+#linguagens{
+    background-color: white;
+    border-radius: 10px;
+    grid-area: 5/5/10/6;
+}
+.secundario1{
+    font-family: 'Lato', sans-serif;
+    padding-left: 10px;
+}
+#skills{
+    background-color: white;
+    border-radius: 10px;
+    grid-area: 10/5/15/6;
+}
+  #experiencia{
+    background-color: white;
+    border-radius: 10px;
+    grid-area: 11/1/18/5;
+}
+footer{
+    display: flex;
+    width: 100%;
+    min-height: 35px;
+    margin-top: 150px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(201, 215, 228);
+    }
+#contato{
+    font-family: 'Lato', sans-serif;
+}
+.secundario2{
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 10px;
+}
+@media screen and (max-width: 1280px) {
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0f3c4c;
+        min-height: 300px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        width: 85%;
+    }
+    #informacao{
+        background-color: white;
+        grid-area: 1/1/5/6;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+    #logo_github{
+        width: 100px;
+    }
+    #informacao_basica{
+        background-color: white;
+        grid-area: 5/1/9/6;
+        min-height: 200px;
+        border-radius: 10px;
+    }
+    #formacao{
+        background-color: white;
+        grid-area: 9/1/14/6;
+        border-radius: 10px;
+    }
+    .listinha{
+        background-color: rgb(188, 214, 223);
+        display: flex;
+        margin-bottom: 5px;
+        align-items: center;
+        padding-left: 15px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: 5px solid #0f3c4c;
+        min-height: 80px;
+        width: 90%;
+        color: #0f3c4c;
+    }
+    #linguagens{
+        background-color: white;
+        border-radius: 10px;
+        grid-area: 14/1/18/6;
+    }
+    #skills{
+        background-color: white;
+        border-radius: 10px;
+        grid-area: 18/1/22/6;
+    }
+    #experiencia{
+        background-color: white;
+        border-radius: 10px;
+        grid-area: 22/1/28/6;
+    }
+    footer{
+        display: flex;
+        width: 100%;
+        min-height: 35px;
+        margin-top: 600px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(201, 215, 228);
+        }
+}
